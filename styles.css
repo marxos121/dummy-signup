@@ -1,37 +1,85 @@
+:root {
+
+}
+
 body {
+    background-color: #252525;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+p {
+    margin: 0;
+}
+
+.image-section {
+    width: 25vw; 
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .main-image {
-    position: relative;
-    height: 80vh;
-    width: 20vw;
+    height: auto;
+    width: inherit
 }
 
-.main-image > img {
-    height: inherit;
+.odin-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: inherit;
+    position: absolute;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.odin-logo > img{
+    height: 20vh;
+    width: auto;
 }
 
 .photo-credits {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
     position: absolute;
     border: white solid;
+    right: 0;
     bottom: 0;
 }
 
-.singup-section {
+.signup-section {
     height: 90vh;
-    width: 50vw;
+    width: 22vw;
     
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .signup-section form{
     display: flex;
     flex-direction: column;
+    width: inherit;
     gap: 1rem;
+}
+
+form > button {
+    align-self: flex-start;
+}
+
+.form-pair {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-unit {
+    display: flex;
+    flex-direction: column;
 }
