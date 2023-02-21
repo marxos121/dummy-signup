@@ -1,21 +1,26 @@
-:root {
-
-}
-
-body {
-    background-color: #252525;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1rem;
-}
-
 p {
     margin: 0;
 }
 
+a, a:visited {
+    color: white;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+body {
+    color: rgb(211, 201, 201);
+    background-color: #252525;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 5rem;
+}
+
 .image-section {
-    width: 25vw; 
+    width: 28vw; 
     height: auto;
     position: relative;
     display: flex;
@@ -24,7 +29,7 @@ p {
     align-items: center;
 }
 
-.main-image {
+.main-image, .main-image > img{
     height: auto;
     width: inherit
 }
@@ -46,37 +51,38 @@ p {
 
 .photo-credits {
     background-color: rgba(0, 0, 0, 0.2);
-    color: white;
+    font-size: 0.8rem;
     position: absolute;
-    border: white solid;
     right: 0;
-    bottom: 0;
+    bottom: 1rem;
 }
 
 .signup-section {
-    height: 90vh;
-    width: 22vw;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
 }
 
 .signup-section form{
     display: flex;
     flex-direction: column;
-    width: inherit;
     gap: 1rem;
 }
 
 form > button {
     align-self: flex-start;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+form > button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .form-pair {
     display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .input-unit {
