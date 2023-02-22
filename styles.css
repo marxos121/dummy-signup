@@ -45,6 +45,10 @@
     input {
         align-self: center;
     }
+
+    label {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 900px){
@@ -76,7 +80,11 @@
         align-self: flex-start;
         padding: 1rem;
         margin-left: 2rem;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.5rem;
     }
 }
 
@@ -188,6 +196,10 @@ h2 {
     padding: 1rem 2rem;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
 input{
     font-size: 1.2rem;
     border-radius: 1em;
@@ -200,5 +212,4 @@ input:invalid {
 
 label {
     font-family: Norse;
-    font-size: 1.2rem;
 }
