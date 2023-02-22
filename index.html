@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sign-up</title>
+    <script>
+        function validatePassword() {
+            const pass = document.querySelector("#password");
+            const conf = document.querySelector("#conf-password");
+
+            if(pass.value != conf.value) {
+                conf.setCustomValidity("Passwords do not match");
+                pass.setCustomValidity("Passwords do not match");
+            } else {
+                conf.setCustomValidity("");
+                pass.setCustomValidity("");
+            }
+        }
+
+
+    </script>
 </head>
 <body>
     <div class="main-image">
@@ -49,11 +65,11 @@
                 <div class="form-row">
                     <div class="input-unit">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required />
+                        <input type="password" id="password" name="password" required onchange="validatePassword()"/>
                     </div> 
                     <div class="input-unit">
                         <label for="conf-password">Confirm password</label>
-                        <input type="password" id="conf-password" required />
+                        <input type="password" id="conf-password" required onchange="validatePassword()" />
                     </div> 
                 </div> 
             </form>
